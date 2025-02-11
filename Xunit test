@@ -1,0 +1,19 @@
+# Moq example for Unit testing
+
+var mock = new Mock<IGetDataRepository>();
+            mock.Setup(p => p.GetNameById(1)).Returns("Jignesh");
+            HomeController home = new HomeController(mock.Object);
+            string result = home.GetNameById(1);
+            Assert.AreEqual("Jignesh", result);
+
+
+# AutoFixture example for Unit testing
+
+ var fixture = new Fixture();
+ var user = fixture.Create<User>();
+
+ // Act
+
+ // Assert
+ Assert.NotNull(user);
+ Assert.NotNull(user.username);
