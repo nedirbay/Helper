@@ -1,1 +1,6 @@
 # This is Asp net helper file.
+
+
+# Add packgage to asp net project
+** 1. Install-Package package-name ** using packgage manager console
+** 2. dotnet add package package-name ** using command prompt
